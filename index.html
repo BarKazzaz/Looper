@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Looper App</title>
+    <link href="app.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header>
+            <h1>Looper App</h1>
+        </header>
+
+        <section class="main-controls">
+            <canvas class="visualizer" height="60px"></canvas>
+            <div id="buttons">
+                <button class="record">Record</button>
+                <button class="stop">Stop</button>
+            </div>
+            <div>
+                <button class="loop">Loop</button>
+            </div>
+        </section>
+
+        <fieldset>
+            <h2>Do you want a counter before recording?</h2>
+            <div>
+              <input 
+                type="checkbox" 
+                style="width: 100px; height: 35px;" 
+                class="countdown" 
+                name="countdown" 
+                checked 
+              />
+              <label for="countdown" style="font-size: 1rem;">Count Down</label>
+            </div>
+            <div>
+                <p class="counter" style="font-size: 8rem; color: red; position: absolute; top: 30%; left: 50%;"></p>
+            </div>
+          </fieldset>
+          
+        <section class="sound-clips">
+        </section>
+
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
