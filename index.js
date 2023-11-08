@@ -48,6 +48,12 @@ window.addEventListener('keydown', (ke) => {
         startRecordingAfter(countdown.checked * 3 * SECOND);
       }
       break;
+    case 'ControlLeft':
+    case 'ControlRight':
+      countdown.checked = !countdown.checked;
+      break;
+    default:
+      console.log(ke.code)
   }
 })
 

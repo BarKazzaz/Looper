@@ -14,6 +14,23 @@
 
         <header>
             <h1>Looper App</h1>
+            <fieldset>
+                <legend>Controls</legend>
+                <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                    <div style="font-size: 2rem; border: solid 1px black;">
+                        Space
+                    </div>
+                    <div style="font-size: 2rem; border: solid 1px black;">
+                        record from top
+                    </div>
+                    <div style="font-size: 2rem; border: solid 1px black;">
+                        Ctrl
+                    </div>
+                    <div style="font-size: 2rem; border: solid 1px black;">
+                        Countdown toggle
+                    </div>
+                </div>
+            </fieldset>
         </header>
 
         <section class="main-controls">
@@ -30,20 +47,14 @@
         <fieldset>
             <h2>Do you want a counter before recording?</h2>
             <div>
-              <input 
-                type="checkbox" 
-                style="width: 100px; height: 35px;" 
-                class="countdown" 
-                name="countdown" 
-                checked 
-              />
-              <label for="countdown" style="font-size: 1rem;">Count Down</label>
+                <input type="checkbox" style="width: 100px; height: 35px;" class="countdown" name="countdown" checked />
+                <label for="countdown" style="font-size: 1rem;">Count Down</label>
             </div>
             <div>
                 <p class="counter" style="font-size: 8rem; color: red; position: absolute; top: 30%; left: 50%;"></p>
             </div>
-          </fieldset>
-          
+        </fieldset>
+
         <section class="sound-clips">
         </section>
 
